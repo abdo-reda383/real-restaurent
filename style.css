@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     font-family: "Quicksand", sans-serif;
+}
+
+html{
+     scroll-behavior: smooth;
+}
+
+
+
+
+/* header start  */
+.header{
+    height: 100vh;
+    background-image: url('./pictures/home_bg.jpeg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+/* utility classes  */
+.primary-text{
+    color: #e4b95b;
+}
+.btn{
+    display: inline-block;
+    padding:15px 30px  ;
+    border: none;
+    border-radius: 15px;
+
+}
+
+
+.container{
+
+    max-width: 1100px;
+    
+    margin: auto;
+}
+
+
+
+.btn-secondary{
+    color: #fff;
+    background: #383844
+    ;
+    margin-top: 2rem;
+    transition: 0.5s;
+}
+/* utility classes  */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar img{
+    width: 80px;
+    margin-left: 100px;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.navbar ul{
+    display: flex;
+    margin-right:100px ;
+}
+
+.navbar ul li a{
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.navbar ul li a:hover{
+    
+    color: #e4b95b;
+}
+
+
+
+.header .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height : 75% ;
+}
+
+.header .content h1{
+    color: #fff;
+    font-size: 40px;
+}
+.header .content p{
+    margin: 20px 0px 40px;
+    color: #fff;
+}
+
+
+header::before{
+    height: 100%;
+    width: 100%;
+    content: "";       /*عشان تخلى الخلفيه اغمق */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,0.6);
+}
+
+
+/* عشان تبرز محتوى الهيدر ال ع الصوه  */
+header *{
+    z-index: 10;
+
+}
+
+
+.btn-primary{
+ border: 1px solid #fff;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover{
+
+    background-color: #e4b95b;
+}
+
+
+
+/* header end  */
+
+
+
+
+/* about start  */
+
+  #about{
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+  }
+
+ #about .title{
+    text-align: center;
+ }
+
+ #about .title h2{
+    font-size:40px ;
+    color: #383848;
+    margin-bottom  : 20px;
+ }
+
+ #about .title p{
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+    margin-bottom: 40px;
+ }
+
+
+ #about .about-content{
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ #about .about-content div{
+    width: 50%;
+}
+
+
+
+#about .about-content p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+#about .about-content img{
+    width: 450px;
+}
+/* about end */
+
+
+/* offers starts  */
+#offers{
+    height: 80vh;
+
+    display: flex;
+    
+    justify-content:center;
+
+    background: url("./pictures/offer-background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#offers .title{
+    text-align: center;
+    margin: 4rem;
+}
+
+
+
+#offers .title h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+     
+    color:#e4b95b;
+     
+}
+
+#offers .title p{
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
+#offers .offers-items{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+#offers .offers-items img{
+    width: 200px;
+    transition: 0.4s;
+}
+#offers .offers-items img:hover{
+    transform: scale(1.1);
+
+}
+
+#offers .offers-items h3{
+    font-size: 25px;
+    margin: 15px;
+}
+
+
+
+
+#offers .offers-items p{
+    font-size: 14px;
+    font-weight: 300;
+    padding:0 20px ;
+    margin-bottom: 15px;
+}
+
+
+#offers .offers-items span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+
+
+}
+
+
+
+/* offers ends*/
+#menu{
+    padding: 5rem 0 ;
+    background-color: #f4f4f4;
+}
+#menu .title{
+    margin-bottom: 4rem;
+    text-align: center;
+
+}
+
+#menu .title h2{
+    
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #383844;
+
+}
+#menu .title p{
+    font-weight: 600;
+    color: #9a9a9a;
+    font-size: 14px;
+
+}
+
+#menu .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#menu .menu-items .menu-item img{
+    border-radius: 50%;
+    width: 80px;
+    margin-right:20px ;
+}
+
+#menu .menu-items .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+ 
+}
+#menu .menu-items .menu-item h3{
+    color: #383844;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 10px;
+    position: relative;
+}
+#menu .menu-items .menu-item span{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+#menu .menu-items .menu-item p{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+#menu .btn{
+    background-color: #e4b95b;
+    color: white;
+    display: block;
+    margin: 20px auto 0 ;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+#menu .btn:hover{
+    background-color:#383844 ;
+}
+
+
+
+
+
+
+
+/* daytime strt  */
+#daytime{
+    background-image: url("./pictures/daytime_bg.jpeg")   ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color:#fff;
+}
+
+
+
+#daytime .daytime-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40vh;
+
+}
+
+
+
+
+#daytime .daytime-items h3{
+    font-size: 32px;
+    margin: 20px 0 10px ;
+}
+
+#daytime .daytime-items p{
+    font-weight: 500;
+
+}
+
+
+/* daytime end  */
+
+
+/* gallgry  start  */
+
+
+#gallary{
+    background-image: url('./pictures/offer-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 8rem 0 6rem;
+}
+
+#gallary .img-gallary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+#gallary .img-gallary img{
+     width: 280px;
+     height: 200px;
+     margin: 20px;
+     border-radius: 15px;
+     opacity: 0.8;
+     transition: 0.3s;
+     
+}
+
+
+#gallary .img-gallary img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+
+#gallary h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* end gallary end  */
+
+
+/* contact start  */
+#contact{
+    padding:5rem 0 ;
+    background-color: #f4f4f4;
+
+}
+#contact .container{
+    max-width: 900px;
+}
+
+#contact .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact .contact-content .contact-info{
+    width: 50%;
+}
+
+
+
+#contact .contact-content .contact-info div{
+    margin: 20px 0;
+    line-height: 1.7;
+
+}
+
+#contact .contact-content .contact-info h3{
+    font-size: 28px;
+    color:#383848;
+    margin-bottom: 10px;
+
+}
+
+
+#contact .contact-content .contact-info p {
+    color: #9a9a9a;
+}
+
+
+#contact .contact-content .contact-info i {
+    color: #e4b95b;
+    margin-right: 5px;
+}
+
+
+#contact .contact-content .contact-info a i {
+    color: white;
+    background-color: #383848;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    
+width: 50px;
+height: 50px;
+transition: 0.4s
+
+}
+
+
+
+
+
+#contact .contact-content .contact-info a i:hover{
+    color: #383848;
+    background-color: #e4b95b;
+    
+}
+
+
+
+
+form{
+    width: 50%;
+}
+form input
+{
+    display: block;
+    width: 300px;
+    padding: 15px 15px;
+    margin:20px 0 ;
+    border: none;
+    background-color: #e3e2dd;
+border-radius: 15px;
+}
+form textarea{
+     display: block;
+    width: 300px;
+    padding: 15px 15px;
+    margin:20px 0 ;
+    border: none;
+    background-color: #e3e2dd;
+    border-radius: 15px;
+}
+
+
+
+#contact .btn{
+    background-color: #e4b95b;
+    color: #fff;
+    padding: 13px 30px;
+}
+
+
+#contact .btn:hover{
+    background-color: #383848;
+    cursor: pointer;
+
+}
+
+/* contact end  */
+
+
+
+/* footer  */
+#footer{
+    background-color: #383848;
+    text-align: center;
+ padding:15px 0 ;
+ font-size: 14px;
+    color: #fff;
+}
+#footer a{
+color: #fff;
+}
